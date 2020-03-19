@@ -1,3 +1,11 @@
+/*
+ *UNIVERSIDAD DEL VALLE DE GUATEMALA
+ *DIEGO DE JESUS ARREDONDO TUCIOS
+ *19422
+ *CC2003 SECCION 30
+ * 
+ *Referencia para resolver el ejercicio https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+*/
 public class BinaryTree<E>{
 	
     private E espanol;

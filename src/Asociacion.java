@@ -1,5 +1,11 @@
-
-  
+  /*
+ *UNIVERSIDAD DEL VALLE DE GUATEMALA
+ *DIEGO DE JESUS ARREDONDO TUCIOS
+ *19422
+ *CC2003 SECCION 30
+ * 
+ *Referencia para resolver el ejercicio https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
+*/
 import java.util.LinkedHashMap;
 import java.util.Map;
 
@@ -15,15 +21,16 @@ public class Asociacion<K, V> {
     BinaryTree<String> house = new BinaryTree<>("house", "casa", dog, woman);
     
     int count=0;
-    Map<String,String> inOrder(BinaryTree<String> tree)
-    {
-        if (tree == null) 
+    
+    //metodo que ordena el Map o el diccionario
+    public Map<String,String> inOrder(BinaryTree<String> arbol){
+        if (arbol == null) 
             return null; 
   
-        inOrder(tree.getIzq());
+        inOrder(arbol.getIzq());
         count++;
-        map.put("*"+tree.ingles()+"*", tree.espanol()); 
-        inOrder(tree.getDer());
+        map.put(arbol.ingles(), arbol.espanol()); 
+        inOrder(arbol.getDer());
         return map;
         
     }
