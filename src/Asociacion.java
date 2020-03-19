@@ -21,15 +21,15 @@ public class Asociacion<K, V> {
     BinaryTree<String> house = new BinaryTree<>("house", "casa", dog, woman);
     
     int count=0;
-    
     //metodo que ordena el Map o el diccionario
     public Map<String,String> inOrder(BinaryTree<String> arbol){
-        if (arbol == null) 
+        if (arbol == null) {
             return null; 
-  
+        }
+        
         inOrder(arbol.getIzq());
         count++;
-        map.put(arbol.ingles(), arbol.espanol()); 
+        map.put("*" + arbol.ingles() + "*", arbol.espanol()); 
         inOrder(arbol.getDer());
         return map;
         
